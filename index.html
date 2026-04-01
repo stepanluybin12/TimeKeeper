@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elgno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #02612b !important;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#">
+                    <i class="bi bi-clock-history me-2"></i>TimeKeeper
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="link-light nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-light nav-link" href="contact.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-light nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-light me-2">Вход</a>
+                        <a href="#" class="btn btn-success">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный экран (Hero секция) -->
+    <section class="py-5 bg-dark-subtle text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Левый блок с текстом -->
+                <div class="col-lg-6">
+
+                    <!-- Главный заголовок -->
+                    <h1 class="display-4 fw-bold mb-5 text-secondary-emphasis">
+                        Учет рабочего времени для тех, <span class="text-danger text-warning">кто устал от
+                            Excel</span>
+                    </h1>
+
+
+
+                    <!-- Кнопки -->
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary btn-lg px-5 py-3 fw-bold me-3">Начать бесплатно</a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4 py-3">Смотреть демо</a>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <i class="bi bi-bar-chart-line display-1 text-success-emphasis" style="font-size: 16rem;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Проблемы -->
+    <section class="py-5 bg-light" id="problems">
+        <div class="container py-5">
+            <!-- Заголовок секции -->
+            <div class="text-center text-secondary-emphasis  mb-5">
+                <h2 class="display-5 fw-bold mt-2">С этими проблемами сталкивается каждый руководитель</h2>
+
+            </div>
+
+            <!-- Три карточки с проблемами -->
+            <div class="row g-4">
+                <!-- Проблема 1: Опоздания -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="text-center text-danger mb-4">
+                            <span class="display-1"><i class="bi bi-exclamation-circle"></i></span>
+                        </div>
+                        <h4 class="text-center mb-3">Опоздания и прогулы</h4>
+                        <p class="text-muted text-center mb-0">
+                            Сотрудники опаздывают, уходят раньше, а вы узнаете об этом только в конце месяца из
+                            зарплатной ведомости.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Проблема 2: Excel хаос -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="text-center text-success-emphasis mb-4">
+                            <span class="display-1"><i class="bi bi-file-earmark-excel"></i></span>
+                        </div>
+                        <h4 class="text-center mb-3">Excel-таблицы путаются</h4>
+                        <p class="text-muted text-center mb-0">
+                            Десятки файлов, забытые пароли, случайно удаленные строки — и вот уже непонятно, кому
+                            сколько платить.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Проблема 3: Споры о зарплате -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="text-center text-danger-emphasis mb-4">
+                            <span class="display-1"><i class="bi bi-emoji-frown"></i></span>
+                        </div>
+                        <h4 class="text-center mb-3">Споры с сотрудниками</h4>
+                        <p class="text-muted text-center mb-0">
+                            "Я же работал в субботу!", "Почему мне не оплатили переработку?" — вечные конфликты без
+                            четкой системы учета.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Связка к решению (небольшой текст) -->
+            <div class="text-center mt-5">
+                <p class="lead">
+                    <span class="fw-bold">TimeKeeper</span> решает все эти проблемы автоматически
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Возможности -->
+    <section class="py-5" id="features">
+        <div class="container py-5">
+            <!-- Заголовок секции -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mt-2">Функции нашего сервиса</h2>
+            </div>
+
+            <!-- Три карточки с функциями -->
+            <div class="row g-4">
+                <!-- Карточка 1: Посещаемость -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 text-primary d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px; border-radius: 50%;">
+                                <i class="bi bi-calendar-check fs-1"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Посещаемость</h3>
+                            <p class="text-muted mb-4">Полный контроль приходов и уходов. Кто опоздал, кто ушел
+                                раньше, кто на больничном — вся информация в одном месте.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Отметки о
+                                    приходе/уходе</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Автоматические
+                                    опоздания</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Календарь
+                                    отсутствий</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Графики работы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2: Рабочее время -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-success bg-opacity-10 text-success d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px; border-radius: 50%;">
+                                <i class="bi bi-clock-history fs-1"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Рабочее время</h3>
+                            <p class="text-muted mb-4">Учет отработанных часов с точностью до минуты. Автоматический
+                                подсчет переработок и ночных смен.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Таймер начала/конца
+                                    дня</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Учет перерывов и
+                                    обеда</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Расчет переработок
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Отчеты по часам
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3: Поддержка -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="bg-info bg-opacity-10 text-info d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px; border-radius: 50%;">
+                                <i class="bi bi-headset fs-1"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Поддержка</h3>
+                            <p class="text-muted mb-4">Помощь всегда рядом. База знаний, частые вопросы и прямая
+                                связь с командой поддержки.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-lg text-info me-2"></i>Чат с поддержкой 24/7
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-info me-2"></i>База знаний и статьи
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-info me-2"></i>Часто задаваемые
+                                    вопросы</li>
+                                <li class="mb-2"><i class="bi bi-check-lg text-info me-2"></i>Обучающие видео</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Секция Как это работает -->
+    <section class="py-5 bg-light" id="how-it-works">
+        <div class="container py-7">
+            <!-- Заголовок секции -->
+            <div class="text-center mb-5 pb-5">
+                <h2 class="display-5 fw-bold mt-2">Максимально простая настройка</h2>
+            </div>
+
+
+            <div class="row g-4">
+                <!-- Шаг 1 -->
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="position-relative mb-4">
+                            <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <span class="fw-bold display-5">1</span>
+                            </div>
+                            <!-- Стрелка (только для десктопа) -->
+                            <div class="d-none d-md-block position-absolute top-50 start-100 translate-middle">
+                                <i class="bi bi-arrow-right fs-1 text-muted"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Регистрация компании</h4>
+                        <p class="text-muted">Создайте аккаунт. Укажите название компании и свои данные</p>
+                    </div>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="position-relative mb-4">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <span class="fw-bold display-5">2</span>
+                            </div>
+                            <!-- Стрелка (только для десктопа) -->
+                            <div class="d-none d-md-block position-absolute top-50 start-100 translate-middle">
+                                <i class="bi bi-arrow-right fs-1 text-muted"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Добавьте сотрудников</h4>
+                        <p class="text-muted">Загрузите список сотрудников или добавьте по одному. Каждый получит
+                            доступ к личному кабинету.</p>
+
+                    </div>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <span class="fw-bold display-5">3</span>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Контролируйте время</h4>
+                        <p class="text-muted">Сотрудники отмечают начало/конец дня, а вы получаете отчеты и видите
+                            полную картину.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дополнительный призыв -->
+            <div class="text-center mt-5">
+                <p class="lead mb-4">Никаких сложных настроек — просто начните работать</p>
+                <a href="#" class="btn btn-primary btn-lg px-5 py-3">Начать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Тарифы -->
+    <section class="py-5" id="pricing">
+        <div class="container py-5">
+            <!-- Заголовок секции -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mt-2">Выберите свой тариф</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">Прозрачные цены без скрытых платежей
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-end">
+                <!-- Тариф 1: Бесплатный -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <span class="badge bg-light text-dark fs-6 px-4 py-2 mb-3">Стартовый</span>
+                                <h3 class="display-6 fw-bold">Бесплатно</h3>
+                                <p class="text-muted">для небольших команд</p>
+                            </div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>До 5 сотрудников
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Учет посещаемости
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Базовые отчеты</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Поддержка по email
+                                </li>
+                                <li class="mb-3 text-muted"><i class="bi bi-x-lg text-danger me-2"></i>Расчет
+                                    зарплаты</li>
+                                <li class="mb-3 text-muted"><i class="bi bi-x-lg text-danger me-2"></i>Интеграция с
+                                    1С</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-outline-primary w-100 py-3">Выбрать тариф</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тариф 2: Бизнес (популярный) -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg h-100 position-relative">
+                        <!-- Бейдж "Популярное" -->
+                        <div class="position-absolute top-0 start-50 translate-middle">
+                            <span class="badge bg-warning text-dark fs-6 px-4 py-2">Популярный</span>
+                        </div>
+
+                        <div class="card-body p-4 mt-4">
+                            <div class="text-center mb-4">
+                                <span class="badge bg-primary text-white fs-6 px-4 py-2 mb-3">Бизнес</span>
+                                <h3 class="display-6 fw-bold">2 990 ₽</h3>
+                                <p class="text-muted">в месяц</p>
+                            </div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>До 50 сотрудников
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Полный учет времени
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Расчет зарплаты
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Расширенные отчеты
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Приоритетная
+                                    поддержка</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Интеграция с 1С
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary w-100 py-3">Выбрать тариф</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тариф 3: Корпоративный -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <span class="badge bg-dark text-white fs-6 px-4 py-2 mb-3">Корпоративный</span>
+                                <h3 class="display-6 fw-bold">7 990 ₽</h3>
+                                <p class="text-muted">в месяц</p>
+                            </div>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Неограниченно
+                                    сотрудников</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Все функции бизнес
+                                </li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>API доступ</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Персональный
+                                    менеджер</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Индивидуальные
+                                    настройки</li>
+                                <li class="mb-3"><i class="bi bi-check-lg text-success me-2"></i>Своя база данных
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-outline-dark w-100 py-3">Выбрать тариф</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Доп. информация -->
+            <div class="text-center mt-5">
+                <p class="text-muted">
+                    <i class="bi bi-shield-check text-primary me-2"></i>
+                    Все тарифы включают SSL-шифрование и ежедневное резервное копирование
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Подвал (Footer) -->
+    <!-- Подвал (маленький) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 small mb-0">© 2024 TimeKeeper. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Политика конфиденциальности</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
